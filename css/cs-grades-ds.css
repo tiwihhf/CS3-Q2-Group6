@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+body {
+  background-image: url('../img/cs-grades-bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  color: #E1E0DB;
+}
+
+/* CARD */
+.card {
+  background-color: #69635C;
+  text-align: center;
+}
+
+.titleCard {
+  background: rgba(225, 224, 219, 0.8);
+  color: #6E685D;
+}
+
+.titleDivider {
+  border: 1px solid #6E685D;
+}
+
+article {
+  background-color: #69635C;
+  border-radius: 15px;
+}
+
+/* FONTS */
+/* FONT TYPE */
+#gradebook h2 {
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+li,
+p {
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3,
+h4 {
+  font-size:1.5em;
+  font-family: 'Inria Serif', serif;
+}
+
+.info h3 {
+  font-size:1.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Inria Serif', serif;
+}
+
+hr {
+  border: 1px solid #E1E0DB;
+}
+
+.articleContents {
+  background-color:#797165;
+  border-radius: 5px;
+  text-align: left;
+}
+
+section a {
+  text-decoration: none;
+  color: #E1E0DB;
+  font-family: 'Open Sans', sans-serif;
+  transition: 100ms;
+}
+
+section a:hover {
+  transition: 100ms;
+  color: #E1E0DB;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(97, 192, 255),
+    0 0 21px rgb(0, 173, 253),
+    0 0 42px rgb(0, 153, 255),
+    0 0 82px rgb(0, 153, 255),
+    0 0 92px rgb(0, 153, 255),
+    0 0 102px rgb(0, 153, 255),
+    0 0 151px rgb(0, 153, 255);
+}
+
+.quote {
+margin: 5px;
+text-align: center;
+}
+
+.cardContents{
+background-color: #8D8377;
+}
+
+/* NAVBAR */
+.nav-item {
+font-family: 'Inria', serif;
+color: #E1E0DB;
+}
+
+.custom-color {
+color: #E1E0DB;
+}
+
+.navbar{
+padding: 0;
+}
+
+.navbar-toggler:focus {
+box-shadow: none;
+}
+
+nav a:hover {
+transition: 100ms;
+color: #E1E0DB;
+text-shadow:
+  0 0 7px #fff,
+  0 0 10px rgb(97, 192, 255),
+  0 0 21px rgb(0, 173, 253),
+  0 0 42px rgb(0, 153, 255),
+  0 0 82px rgb(0, 153, 255),
+  0 0 92px rgb(0, 153, 255),
+  0 0 102px rgb(0, 153, 255),
+  0 0 151px rgb(0, 153, 255);
+}
+
+#search {
+  font-family:"Times New Roman",serif;
+}
+
+.redirect {
+color: #E1E0DB;
+text-decoration: none;
+transition: 100ms;
+}
+.redirect:hover {
+transition: 100ms;
+color: #E1E0DB;
+text-shadow:
+  0 0 7px #fff,
+  0 0 10px rgb(97, 192, 255),
+  0 0 21px rgb(0, 173, 253),
+  0 0 42px rgb(0, 153, 255),
+  0 0 82px rgb(0, 153, 255),
+  0 0 92px rgb(0, 153, 255),
+  0 0 102px rgb(0, 153, 255),
+  0 0 151px rgb(0, 153, 255);
+}
+
+/* FOOTER */
+footer ul {
+padding:0;
+margin:0;
+}
+
+footer h3 {
+font-size:1.5em;
+font-weight:bold;
+font-family: 'Inria Serif', serif;
+}
+
+footer li {
+list-style-type:none;
+}
+
+footer h3,
+ul,
+li {
+color:#E1E0DB;
+}
+
+footer li {
+font-size:1em;
+font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+background-color:#6E685D;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+/* UP UNTIL SMALL SCREEN */
+@media only screen and (max-width: 766px) {
+    footer .container {
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+}
+
+/* AT LEAST MEDIUM SCREEN */
+@media only screen and (min-width: 767px) {
+  footer .container {
+    display:grid;
+    grid-template-columns: 65% 35%;
+    column-gap:1.5em;
+  }
+
+  .contact {
+    min-width:65%;
+  }
+
+  .info {
+    min-width:35%;
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+
+  .info li {
+    line-height:1.5em;
+  }
+}
+
+.tableRow {
+  border-radius: 10px;
+  background-color: #8D8377;
+}

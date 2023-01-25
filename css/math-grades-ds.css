@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  background-image:url('../img/math-grades-bg.jpg');
+  background-position:top;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+ul {
+  padding:0;
+  margin:0;
+}
+
+li {
+  list-style-type:none;
+}
+
+.text h4,
+.quarter {
+  font-weight:bold;
+}
+
+/* FONT COLORS */
+.grades-list li {
+  color:#6E685D;
+}
+
+.contact li,
+h3,
+h4,
+p {
+  color:#E1E0DB;
+}
+
+/* FONT TYPE */
+li,
+p {
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3,
+h4 {
+  font-size:1.5em;
+  font-family: 'Inria Serif', serif;
+}
+
+nav li {
+  font-family: 'Inria', serif;
+  color: #E1E0DB;
+}
+
+.info h3 {
+  font-size:1.8em;
+}
+
+/* SITE COLORS */
+.custom-color {
+  color: #E1E0DB;
+}
+
+/* SECTION 1: NAVBAR */
+nav {
+  background:transparent;
+}
+
+nav a:hover {
+  transition: 100ms;
+  color: #E1E0DB;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(97, 192, 255),
+    0 0 21px rgb(0, 173, 253),
+    0 0 42px rgb(0, 153, 255),
+    0 0 82px rgb(0, 153, 255),
+    0 0 92px rgb(0, 153, 255),
+    0 0 102px rgb(0, 153, 255),
+    0 0 151px rgb(0, 153, 255);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#search {
+  font-family:"Times New Roman",serif;
+}
+
+/* HEADER */
+#header-placeholder {
+  height:10vh;
+  width:100vw;
+  background-color:#E1E0DB;
+}
+
+/* MAIN CONTENT */
+.card {
+  background-color:#6E685D;
+  border-radius:25px;
+}
+
+.card-body h3 {
+  padding-bottom:8px;
+  border-bottom:2px solid #E1E0DB;
+}
+
+.grades {
+  background-color:#E1E0DB;
+  border-radius:12px;
+}
+
+/* FOOTER */
+footer {
+  background-color:#6E685D;
+}
+
+footer ul {
+  padding:0;
+  margin:0;
+}
+
+footer h3 {
+  font-size:1.5em;
+  font-weight:bold;
+  font-family: 'Inria Serif', serif;
+}
+
+footer li {
+  list-style-type:none;
+}
+
+footer h3, ul, li {
+  color:#E1E0DB;
+}
+
+footer li {
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+/* UP UNTIL SMALL SCREEN */
+@media only screen and (max-width: 766px) {
+  footer .container {
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+}
+
+/* UP UNTIL MEDIUM SCREEN */
+@media only screen and (max-width: 991px) {
+  .grades {
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+}
+
+/* AT LEAST MEDIUM SCREEN */
+@media only screen and (min-width: 767px) {
+  #main {
+    padding-left:4.5em;
+    padding-right:4.5em;
+  }
+
+  footer .container {
+    display:grid;
+    grid-template-columns: 65% 35%;
+    column-gap:1.5em;
+  }
+
+  .contact {
+    min-width:65%;
+  }
+
+  .info {
+    min-width:35%;
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+
+  .info li {
+    line-height:1.5em;
+  }
+}
+
+/* AT LEAST LARGE SCREEN */
+@media only screen and (min-width: 992px) {
+  .grades-list {
+    display:grid;
+    grid-template-columns:35% 15% 15% 40%;
+  }
+
+  .name {
+    width:35%;
+  }
+
+  .submitted {
+    width:15%;
+  }
+
+  .score {
+    width:15%;
+  }
+
+  .remarks {
+    width:40%;
+  }
+
+  .card {
+    padding-bottom:15em;
+  }
+}

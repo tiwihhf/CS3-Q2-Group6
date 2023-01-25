@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+body {
+  background-image: url(../img/login-bg.jpg);
+  max-width: 100%;
+}
+
+/* TAGS */
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.btn {
+  color: #69635C;
+  background-color: #E1E0DB;
+}
+
+/* MIDDLE CARD */
+section {
+  max-width: 100%;
+  max-height: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.card {
+  background-color: #69635C;
+  color: #E1E0DB;
+}
+
+#main {
+  display:flex;
+  row-gap:.5em;
+}
+
+#lost {
+  color:#E1E0DB; 
+  margin-left:auto; 
+  margin-right:auto;
+}

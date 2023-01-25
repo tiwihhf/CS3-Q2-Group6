@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math 3</title>
+  <!-- BOOTSTRAP LINK -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- NORMAL LINK -->
+  <link href="../css/math-course-ds.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg mb-3">
+    <a href="./homepage.html" class="navbar-brand ms-3"><img src="../img/logo.png" alt="logo" width="120" height="59"></a>
+    <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class="bx bx-menu bx-md"></i>
+    </button>
+    <div class=" collapse navbar-collapse ul-bg" id="btn">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="./homepage.html" class=" nav-link mx-3 text-white fs-5">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./course-page.html" class=" nav-link mx-3 text-white fs-5">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-3 fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Options </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./math-grades.html">Grades</a></li>
+            <li><a class="dropdown-item" href="../index.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- SEARCH -->
+      <form class="d-flex pull-right ms-auto" id="search" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit"><img src="../img/search-icon.png" alt="magnifying glass search icon" width="25" height="25"></button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- SECTION 2: MAIN BODY -->
+  <section id="main" class="pb-5">
+    <!-- SECTION 2.1: COURSE INTRO -->
+    <div class="intro px-5">
+      <div class="container">
+        <div class="text pt-5 pb-3">
+            <h4>My Courses > Math 3</h4>
+          </div>
+          <div class="images d-md-flex">
+            <!-- FEATURED IMAGE -->
+            <div class="featured">
+              <img src="../img/math-featured.jpg" alt="letter with mathematical writings">
+            </div>
+            <!-- FEATURED QUOTE -->
+            <div class="quote px-4 pt-3 pb-4">
+              <h3 class="course-name">Mathematics 3</h3>
+              <p class="quote-text px-5 pt-2">"Mathematics is the alphabet with which God has written the universe."</p>
+              <p class="quote-source px-4">- Galileo Galilei</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2.2: 2ND QUARTER LEARNING GUIDES-->
+    <div class="modules px-5">
+      <div class="container">
+        <div class="text pt-5 pb-3">
+            <h4>2nd Quarter - Learning Guides</h4>
+          </div>
+
+          <div class="files">
+            <p class="px-3 py-2"><a href="../pdfs/polynomial-graph.pdf">SLG 1 - Graphs of Polynomial Functions</a></p>
+            <p class="px-3 py-2"><a href="../pdfs/rational-graph.pdf">SLG 2 - Graphs of Rational Functions</a></p>
+            <p class="px-3 py-2"><a href="../pdfs/function-transformation.pdf">SLG 3 - Transformation of Functions</a></p>
+            <p class="px-3 py-2"><a href="../pdfs/inverse-functions.pdf">SLG 4 - Introduction to Inverse Functions</a></p>
+          </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2.3: 2ND QUARTER ASSESSMENTS -->
+    <div class="reqs px-5">
+      <div class="container">
+        <div class="text pt-5 pb-3">
+            <h4>2nd Quarter - Assessments</h4>
+          </div>
+
+          <div class="files">
+            <p class="px-3 py-2"><a href="./quiz.html">Formative Assessment 1</a></p>
+            <p class="px-3 py-2"><a href="https://cdn.kutasoftware.com/Worksheets/Alg2/Graphing%20Polynomial%20Functions.pdf">Formative Assessment 2</a></p>
+            <p class="px-3 py-2"><a href="https://cdn.kutasoftware.com/Worksheets/Alg2/Graphing%20Polynomial%20Functions.pdf">Formative Assessment 3</a></p>
+            <p class="px-3 py-2"><a href="https://cdn.kutasoftware.com/Worksheets/Alg2/Graphing%20Polynomial%20Functions.pdf">Formative Assessment 4</a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- SECTION 3: FOOTER -->
+  <footer class="px-5">
+    <div class="container d-sm-flex py-5 px-3">
+      <!-- PSHS-CLC ADDRESS -->
+      <div class="details info">
+        <h3>Details:</h3>
+        <p>
+          Philippine Science High School - Central Luzon Campus, Lily Hill Street, Clark Freeport Zone 2009 Angeles City, Philippines, Claro M. Recto, Angeles City, Pampanga, North Luzon, 2009
+        </p>
+      </div>
+      <!-- PSHS-CLC CONTACT INFORMATION -->
+      <div class="contact info">
+        <h3>Contact Us:</h3>
+        <ul>
+          <li>09XX-XXX-XXXX</li>
+          <li>khub.clc.pshs.edu.ph</li>
+          <li>https://www.facebook.com/pshsclc</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT EXTERNAL LINKS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

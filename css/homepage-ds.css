@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
+body {
+  background-image: url('../img/homepage-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 100%;
+  color: #E1E0DB;
+}
+
+/* FONTS */
+a {
+  text-decoration:none;
+}
+
+body h1, h4 {
+  font-family: 'Inria Serif', serif;
+  font-size:1.8em;
+}
+
+body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:1em;
+}
+
+.info h3 {
+  font-size:1.8em;
+}
+
+nav {
+  font-family: 'Inria', serif;
+  color: #E1E0DB;
+}
+
+/* SITE COLORS */
+.custom-color {
+  color: #E1E0DB;
+}
+
+/* SECTION 1: NAVBAR */
+nav a:hover {
+  transition: 100ms;
+  color: #E1E0DB;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(97, 192, 255),
+    0 0 21px rgb(0, 173, 253),
+    0 0 42px rgb(0, 153, 255),
+    0 0 82px rgb(0, 153, 255),
+    0 0 92px rgb(0, 153, 255),
+    0 0 102px rgb(0, 153, 255),
+    0 0 151px rgb(0, 153, 255);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#search {
+  font-family:"Times New Roman",serif;
+}
+
+/* CARD */
+section {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.db-container {
+  background-color: #69635C;
+  border-radius: 25px;
+}
+
+.card {
+  background-color: #E1E0DB;
+}
+
+.card-text {
+  color: #69635C;
+}
+
+/* CALENDAR + ANNOUNCEMENTS */
+.transparent-bg .db-container {
+  background: rgba(105,99,92,0.75);
+}
+
+#announcements {
+  border-bottom:2px solid white;
+  margin-bottom:.5em;
+  padding-bottom:.3em;
+}
+
+/* MY COURSES */
+.my-courses {
+  background:#69635C;
+}
+
+.my-courses h1 {
+  font-size:1.8em;
+  border-bottom:2px solid white;
+  padding-bottom:.4em;
+  margin-bottom:1em;
+}
+
+.my-courses .card {
+  text-align:center;
+}
+
+/* FOOTER */
+footer ul {
+  padding:0;
+  margin:0;
+}
+
+footer h3 {
+  font-size:1.5em;
+  font-weight:bold;
+  font-family: 'Inria Serif', serif;
+}
+
+footer li {
+  list-style-type:none;
+}
+
+footer h3, ul, li {
+  color:#E1E0DB;
+}
+
+footer li {
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+/* UP UNTIL SMALL SCREEN */
+@media only screen and (max-width: 766px) {
+  footer .container {
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+}
+
+/* AT LEAST MEDIUM SCREEN */
+  @media only screen and (min-width: 767px) {
+  footer .container {
+    display:grid;
+    grid-template-columns: 65% 35%;
+    column-gap:1.5em;
+  }
+
+  .contact {
+    min-width:65%;
+  }
+
+  .info {
+    min-width:35%;
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+
+  .info li {
+    line-height:1.5em;
+  }
+}

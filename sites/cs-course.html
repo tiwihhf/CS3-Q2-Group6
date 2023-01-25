@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science 3</title>
+  <!-- BUNDLES -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="../css/cs-course-ds.css">
+</head>
+
+<body>
+  <!-- SECTION 1: HEADER -->
+  <nav class="navbar navbar-expand-lg bg mb-3 sticky-top">
+    <a href="./homepage.html" class="navbar-brand ms-3"><img src="../img/logo.png" alt="logo" width="120" height="59"></a>
+    <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class='bx bx-menu bx-md'></i>
+    </button>
+    <div class=" collapse navbar-collapse ul-bg" id="btn">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="./homepage.html" class=" nav-link mx-3 text-white fs-5">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./course-page.html" class=" nav-link mx-3 text-white fs-5">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-3 fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Options </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./cs-grades.html">Grades</a></li>
+            <li><a class="dropdown-item" href="../index.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    <form class="d-flex pull-right ms-auto" role="search">
+      <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn" type="submit"><img src="../img/search-icon.png" width="25" height="25" alt="Search"></button>
+    </form>
+    </div>
+  </nav>
+
+  <!-- SECTION 2: COURSE INTRO + QUOTE -->
+  <div class="container mt-5 pt-3 px-4 course">
+    <h2 class="fs-4"><a href="#" class="redirect">My Courses</a></h2>
+    <h4 class="quote py-4"><em>“A computer once beat me at chess, but it was no match for me at kick boxing.”</em> — Emo Philips</h4>
+    <div class="row">
+    <!-- WELCOME TO COMPUTER SCIENCE 3-->
+    <section class="col-sm-6">
+        <div class="card m-4 titleCard">
+          <div class="card-body titleContents">
+            <hr class="titleDivider">
+            <h2>Welcome to</h2>
+            <h1>Computer Science 3</h1>
+            <hr class="titleDivider">
+          </div>
+        </div>
+    </section>
+    <!-- UPCOMING DEADLINES -->
+    <section class="col-sm-6">
+      <div class="card m-4 border-0">
+        <div class="card-body">
+          <h2>Upcoming Deadlines</h2>
+          <hr>
+          <div class="card border-0">
+            <div class="card-body articleContents">
+              <div class="row m-0">
+                <p class="m-0"><b>No deadlines so far! Woohoo!</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MODULES -->
+    <article class="mt-5 mb-5 p-3">
+      <h2>2nd Quarter Modules</h2>
+      <hr>
+      <div class="card">
+        <div class="card-body articleContents">
+          <div class="container-fluid row">
+            <section class="col-sm-6">
+              <!-- COLUMN 1 -->
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Learning Guide</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://www.youtube.com/watch?v=wDgQdr8ZkTw">SLG 1.0.1 - A Guide Through The Internet</a></h5>
+              </div>
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Learning Guide</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SLG 1.1.1 - Identifying Internet Sarcasm Pt.1</a></h5>
+              </div>
+            </section>
+            <!-- COLUMN 2-->
+            <section class="col-sm-6">
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Learning Guide</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://youtu.be/_b5V1wchZJU?t=5">SLG 1.1.2 - Identifying Internet Sarcasm Pt.2</a></h5>
+              </div>
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Learning Guide</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://www.youtube.com/watch?v=mzgYj_qCHLg">SLG 1.2.1 - Computer Legacies</a></h5>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- SECTION 4: ASSIGNMENTS -->
+    <article class="mt-5 mb-5 p-3">
+      <h2>2nd Quarter Assignments</h2>
+      <hr>
+      <div class="card">
+        <div class="card-body articleContents">
+          <div class="container-fluid row">
+            <section class="col-sm-6">
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Formative Assessment</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="#">FA 1 - Sarcasm Identification</a></h5>
+              </div>
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Formative Assessment</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://www.youtube.com/watch?v=3rzpwfL21Kc">FA 2 - Meme Rating</a></h5>
+              </div>
+            </section>
+            <section class="col-sm-6">
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Alternative Assessment</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://www.youtube.com/watch?v=grd-K33tOSM">AA 1 - Find the Impostor</a></h5>
+              </div>
+              <div class="card m-4 cardContents border-0 px-2">
+                <h5 class="mt-2 mb-2 ml-2 mr-2">Alternative Assessment</h5>
+                <hr class="mb-0 mt-0">
+                <h5 class="mt-2 mb-2 ml-2 mr-2 title"><a href="https://youtu.be/U0TXIXTzJEY?t=223">AA 2 - Create a Meme Site</a></h5>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+  <!-- SECTION 5: FOOTER -->
+  <footer class="px-5">
+    <div class="container d-sm-flex py-5 px-3">
+      <!-- PSHS-CLC ADDRESS -->
+      <div class="details info">
+        <h3>Details:</h3>
+        <p>
+          Philippine Science Hi<a href="https://www.youtube.com/watch?v=QH21xtIRzmw&t=0s" class="redirect">g</a>h School - Central Luzon Campus, Lily Hill Street, Clark Freeport Zone 2009 Angeles City, Philippines, Claro M. Recto, Angeles City, Pampanga, North Luzon, 2009
+        </p>
+      </div>
+      <!-- PSHS-CLC CONTACT INFORMATION -->
+      <div class="contact info">
+        <h3>Contact Us:</h3>
+        <ul>
+          <li>09XX-XXX-XXXX</li>
+          <li>khub.clc.pshs.edu.ph</li>
+          <li>https://www.facebook.com/pshsclc</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT EXTERNAL LINKS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
