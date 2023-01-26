@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #E1E0DB;
+  background-image: url('../img/authors-bg.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #E1E0DB;
+}
+
+/* FONTS */
+.course h2 {
+  font-size:1.5em;
+  font-family:"Inria Serif",serif;
+  font-weight:bold;
+}
+
+/* NAVIGATION BAR */
+nav{
+  font-family: 'Inria', serif;
+  color: #E1E0DB;
+}
+
+.custom-color {
+  color: #E1E0DB;
+}
+
+.navbar{
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+nav a:hover {
+  transition: 100ms;
+  color: #E1E0DB;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(97, 192, 255),
+    0 0 21px rgb(0, 173, 253),
+    0 0 42px rgb(0, 153, 255),
+    0 0 82px rgb(0, 153, 255),
+    0 0 92px rgb(0, 153, 255),
+    0 0 102px rgb(0, 153, 255),
+    0 0 151px rgb(0, 153, 255);
+}
+
+.redirect {
+  color: #E1E0DB;
+  text-decoration: none;
+  transition: 100ms;
+}
+
+.redirect:hover {
+  transition: 100ms;
+  color: #E1E0DB;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(97, 192, 255),
+    0 0 21px rgb(0, 173, 253),
+    0 0 42px rgb(0, 153, 255),
+    0 0 82px rgb(0, 153, 255),
+    0 0 92px rgb(0, 153, 255),
+    0 0 102px rgb(0, 153, 255),
+    0 0 151px rgb(0, 153, 255);
+}
+
+/* TEXT INTRO */
+.intro .container {
+  border:2px solid #d2c5b2;
+  text-align:center;
+  display:flex;
+  row-gap:.7em;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:rgba(81, 75, 65, 0.75);
+}
+
+.intro h2 {
+  font-family:"Inria Serif", serif;
+}
+
+.intro p {
+  font-size:1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* CONTRIBUTIONS */
+.contributions {
+  overflow-x:hidden;
+  background-color:#fff;
+}
+
+.row .container {
+  min-height:50vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.col-sm.container {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  opacity:0.9;
+}
+
+.col-sm.container:hover {
+  font-size:1.5em;
+  opacity:1;
+}
+
+.name {
+  font-size:2em;
+  font-family:"Inria Serif",serif;
+}
+
+.work {
+  font-size:1em;
+  font-family:"Open Sans",sans-serif;
+  text-align:center;
+}
+
+#enzo {
+  background-image:url('../img/enzo.png');
+}
+
+#jm {
+  background-image:url('../img/jm.png');
+}
+
+#wil {
+  background-image:url('../img/wil.png');
+}
+
+#mary {
+  background-image:url('../img/mary.png');
+}
+
+#chelsea {
+  background-image:url('../img/chelsea.png');
+}
+
+#cite {
+  background-image:url('../img/pinterest-logo.png');
+}
+
+/* FOOTER */
+footer ul {
+  padding:0;
+  margin:0;
+}
+
+footer h3 {
+  font-size:1.5em;
+  font-weight:bold;
+  font-family: 'Inria Serif', serif;
+}
+
+footer li {
+  list-style-type:none;
+}
+
+footer h3,
+ul,
+li {
+  color:#E1E0DB;
+}
+
+footer li {
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+/* UP UNTIL SMALL SCREEN */
+@media only screen and (max-width: 766px) {
+  footer .container {
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+}
+
+/* AT LEAST MEDIUM SCREEN */
+@media only screen and (min-width: 767px) {
+  footer .container {
+    display:grid;
+    grid-template-columns: 65% 35%;
+    column-gap:1.5em;
+  }
+
+  .contact {
+    min-width:65%;
+  }
+
+  .info {
+    min-width:35%;
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+  }
+
+  .info li {
+    line-height:1.5em;
+  }
+}
+
+.tableRow {
+  border-radius: 10px;
+  background-color: #8D8377;
+}
